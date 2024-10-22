@@ -6,7 +6,7 @@ async function generateJsonDB() {
     const pokemonList = await fetch(pokemonApiURL).then((res) => res.json());
     console.log(pokemonList);
     const payload = [];
-    for (let index = 0; index < 1; index++) {
+    for (let index = 0; index < pokemonList.results.length; index++) {
       const pokemon = pokemonList.results[index];
       const detail = await fetch(pokemon.url).then((res) => res.json());
       const species = await fetch(detail.species.url).then((res) => res.json());
