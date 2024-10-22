@@ -1,8 +1,9 @@
 import { useState, useEffect } from 'react';
+import PokemonList from './components/PokemonList';
 import './App.css';
 
 function App() {
-  const [setPokemonData] = useState([]);
+  const [pokemonData, setPokemonData] = useState([]);
 
   useEffect(() => {
     async function fetchPokemon() {
@@ -26,6 +27,9 @@ function App() {
       <header>
         <h1 className="text-4xl text-center font-bold p-8">Pokedex</h1>
       </header>
+      <div className="max-w-7xl mx-auto mb-8 px-4">
+        <PokemonList pokemonData={pokemonData} />
+      </div>
     </div>
   );
 }
