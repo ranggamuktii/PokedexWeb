@@ -34,7 +34,7 @@ async function generateJsonDB() {
       console.log(detail);
     }
 
-    fs.writeFileSync('./db.json', JSON.stringify(payload, null, 2), 'utf8');
+    fs.writeFileSync('./db.json', JSON.stringify({ pokemon: payload }, null, 2), 'utf8');
     console.log(payload);
   } catch (error) {
     console.log(error);
