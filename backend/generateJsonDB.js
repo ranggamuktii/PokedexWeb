@@ -33,6 +33,8 @@ async function generateJsonDB() {
       payload.push(item);
       console.log(detail);
     }
+
+    fs.writeFileSync('./db.json', JSON.stringify(payload, null, 2), 'utf8');
     console.log(payload);
   } catch (error) {
     console.log(error);

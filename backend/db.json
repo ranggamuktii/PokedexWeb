@@ -1,3 +1,25 @@
-{
-  "pokemon": []
-}
+[
+  {
+    "id": 1,
+    "name": "bulbasaur",
+    "types": [
+      "grass",
+      "poison"
+    ],
+    "abilities": [
+      "overgrow",
+      "chlorophyll"
+    ],
+    "height": 7,
+    "weight": 69,
+    "cries": {
+      "latest": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/latest/1.ogg",
+      "legacy": "https://raw.githubusercontent.com/PokeAPI/cries/main/cries/pokemon/legacy/1.ogg"
+    },
+    "evolutionChains": [
+      "bulbasaur",
+      "ivysaur",
+      "venusaur"
+    ]
+  }
+]
